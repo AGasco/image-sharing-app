@@ -1,31 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { SignInPage, PrivateRoute } from './auth';
-import { CreateGroupPage, GroupPage, GroupsListPage } from './groups';
 import { Navbar } from './navigation';
 
-const routes = [
-  {
-    path: '/',
-    Component: GroupsListPage,
-    private: true,
-    exact: true
-  },
-  {
-    path: '/groups/:id',
-    Component: GroupPage,
-    private: true
-  },
-  {
-    path: '/sign-in',
-    Component: SignInPage
-  },
-  {
-    path: '/create-group',
-    Component: CreateGroupPage,
-    private: true
-  }
-];
+const routes = [{ path: '/sign-in', Component: SignInPage }];
 
 export const Routes = ({ isLoading, user }) => (
   <Router>

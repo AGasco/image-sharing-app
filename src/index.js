@@ -6,21 +6,18 @@ import * as serviceWorker from './serviceWorker';
 
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
-import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCyqN5BLaeTysxcNjPfwMeKM7uUmAxCV-Q',
-  authDomain: 'mern-members-only.firebaseapp.com',
-  projectId: 'mern-members-only',
-  storageBucket: 'mern-members-only.appspot.com',
-  messagingSenderId: '963810733708',
-  appId: '1:963810733708:web:8d9aaecc2d035a746b15a9',
-  measurementId: 'G-ZZMGQWL2R5'
+  apiKey: 'AIzaSyCajI4b4Ti1t9gs--Ew3yQwIcBLbpq8FxY',
+  authDomain: 'mern-photo-sharing.firebaseapp.com',
+  projectId: 'mern-photo-sharing',
+  storageBucket: 'mern-photo-sharing.appspot.com',
+  messagingSenderId: '698465192822',
+  appId: '1:698465192822:web:dc206d8f56934a2dcd8857'
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const auth = getAuth(app);
 
 ReactDOM.render(
