@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { SignInPage, PrivateRoute } from './auth';
-import { BrowsePhotosPage } from './photos';
+import { BrowsePhotosPage, UploadPhotoPage } from './photos';
 import { Navbar } from './navigation';
 
 const routes = [
   { path: '/sign-in', Component: SignInPage },
-  { path: '/', Component: BrowsePhotosPage, exact: true, private: true }
+  { path: '/', Component: BrowsePhotosPage, exact: true, private: true },
+  { path: '/upload-photo', Component: UploadPhotoPage, private: true }
 ];
 
 export const Routes = ({ isLoading, user }) => (
