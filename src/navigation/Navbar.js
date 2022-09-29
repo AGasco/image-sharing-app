@@ -17,7 +17,7 @@ export const Navbar = ({ user }) => {
   return (
     <nav>
       <Link to="/">
-        <h1 className="app-heading">Members-Only App</h1>
+        <h1 className="app-heading">Image Sharing App</h1>
       </Link>
       {user ? (
         <>
